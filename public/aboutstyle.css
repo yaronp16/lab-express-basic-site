@@ -1,0 +1,239 @@
+
+     /* -----------------------------body------------------------------*/
+     :root{
+        --bg-color: #D8D8D8;
+    }
+    
+body { 
+    min-height: 100vh; 
+    color: #000;
+    background-color: var(--bg-color);
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* -----------------------------body------------------------------*/
+    /* -----------------------------button------------------------------*/
+  .wrapper{
+    position: fixed;
+    top: 93vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
+  .link_wrapper{
+    position: relative;
+  }
+  
+  a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #333;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    width: 200px;
+    border: 3px solid #333;
+    background: transparent;
+    color: #333;
+  }
+  
+  a:hover + .icon{
+    border: 3px solid #333;
+    right: -25%;
+  }
+    /* -----------------------------button------------------------------*/
+    /* -----------------------------Dwayne------------------------------*/
+ 
+    .textcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding: 2vh;
+        height: 50vh;  
+        width: 60vw;
+    }
+    .perspective-text {
+        color: white;
+        font-family: Arial;
+        font-size: 58px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+      }
+      
+      .perspective-line {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      p {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .perspective-line:nth-child(odd) {
+        transform: skew(60deg, -30deg) scaleY(0.667);
+      }
+      
+      .perspective-line:nth-child(even) {
+        transform: skew(0deg, -30deg) scaleY(1.337);
+      }
+      
+      .perspective-text:hover p {
+        transform: translate(0, -50px);
+      }
+      
+      .perspective-line:nth-child(1) {
+        left: 29px;
+      }
+      
+      .perspective-line:nth-child(2) {
+        left: 58px;
+        background: #f07e6e;
+      }
+      
+      .perspective-line:nth-child(3) {
+        left: 87px;
+        background: #84cdfa;
+      }
+      
+      .perspective-line:nth-child(4) {
+        left: 116px;
+        background: #5ad1cd;
+      }
+      
+      .perspective-line:nth-child(5) {
+        left: 145px;
+      }
+       /* -----------------------------Dwayne------------------------------*/
+       /* -----------------------------filltext------------------------------*/
+       *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #D8D8D8;
+}
+.fillcontainer{
+ position: absolute;
+  overflow: hidden;
+  width: 60vw;
+  left: 38vw;
+  top: 4vh;
+  color: #000;
+  background-color: var(--bg-color);
+  font-family: 'Maitree', serif;  
+}
+
+
+       h1{
+        font-size: 3em;
+        font-weight: normal;
+    }
+    
+    /* title styles */
+    .home-title span{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        line-height: 1.2;
+    }
+    
+    .home-title span::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(-101%);
+    }
+    
+    .home-title span::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(0);
+    }
+    
+    .home-title span:nth-of-type(1)::before,
+    .home-title span:nth-of-type(1)::after{
+        animation-delay: 1s;
+    }
+    
+    .home-title span:nth-of-type(2)::before,
+    .home-title span:nth-of-type(2)::after{
+        animation-delay: 1.5s;
+    }
+    
+    @keyframes a-ltr-after{
+        0% {transform: translateX(-100%)}
+        100% {transform: translateX(101%)}
+    }
+    
+    @keyframes a-ltr-before{
+        0% {transform: translateX(0)}
+        100% {transform: translateX(200%)}
+    }
+
+      /* -----------------------------filltext------------------------------*/
+      /* -----------------------------profilephoto------------------------------*/
+    #styleimg {
+        background-image: url(rockprof.jpeg);
+        object-fit: cover;
+        width: 100%;
+        height: 60vh;
+        background-repeat: no-repeat;
+    }
+    .containerimg{
+        text-align: center;
+        padding: 10px 40px;
+    }
+      /* -----------------------------profilephoto------------------------------*/

@@ -1,0 +1,100 @@
+
+body { 
+    min-height: 100vh; 
+    background-image:url("therockback.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------------------------------------------ h1 ------------------------------*/
+.h1div{
+    position: absolute;
+    top: 10vh;
+    left: 9vh;
+}
+h1 {
+    font-family: 'Pirata One', cursive;
+    font-size: 3.8rem;
+    color: #F7971E;
+    text-align: center;
+}    
+h1 spam {
+      font-size: 10rem; 
+}
+/*----------------------------------------------text-------------------------------*/
+.info{
+    position: absolute;
+    color: #f4f4f4;
+    font-size: 3vh;
+    font-family: 'Pirata One', cursive;
+}
+
+#infoid{
+    position: absolute;
+    left:115vh;
+    top:14vh;
+    width: 30vh;
+}
+#workid{
+    position: absolute;
+    left: 120vh;
+    top:40vh;
+    width: 20vh;
+}
+/*-----------------------------------------------Button-----------------------------------------*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+  }
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid  #F7971E;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px  #F7971E;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      #F7971E,
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+  #press1{
+    margin: 15vh 6vh 10vh 6vh;
+  }
+#press2{
+    margin: 6vh;
+  }
+
